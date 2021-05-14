@@ -1,10 +1,11 @@
-import styled, { createGlobalStyle } from "styled-components";
+import { createGlobalStyle } from "styled-components";
+import TimerApp from "./components/timer/TimerApp";
 import TodoApp from "./components/todo/TodoApp";
 
 const GlobalStyle = createGlobalStyle`
   body {
     margin: 0;
-    padding: 0;
+    padding: 5rem 35rem;
     background-color: #DB524D;
   }
 `;
@@ -12,6 +13,7 @@ const GlobalStyle = createGlobalStyle`
 function App() {
   return (
     <>
+      <TimerApp />
       <TodoApp />
       <GlobalStyle />
     </>
